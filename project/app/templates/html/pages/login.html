@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+        <title>onlinestor</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    </head>
+
+<div class="wrapper-from">
+		<div class="container">
+			<div class="row">
+				<div class="col-ms-12 col-ms-offset-3">
+					<div class="form-login">
+						<form accept-charset="utf-8">
+							<div class="col-ms-12 col-xs-12">
+								<div class="group-form col-ms-12 col-xs-12">
+									<input class="box-login"  type="text" name="email" placeholder="អ៊ីម៉ែល​ ឬ​ លេខទូរស័ព្ទ"​ autocomplete="off">
+								</div>
+								<div class="group-form col-ms-12 col-xs-12">
+									<input class="box-login" type="text" name="email" placeholder="លេខកូដសម្ងាត់"​>
+								</div>
+								<div class="group-form col-ms-12 col-xs-12">
+									<a class="pull-right" href="">ភ្លេចពាក្យសម្ងាត់
+									</a>
+								</div>
+								<div class="col-md-12">
+									<div class="pull-right">
+										<button class="button" type="submit">ចូូលទៅកាន់</button>
+									</div>
+								</div>
+								<div class="col-ms-12">
+									<div class="text-center margin-top">
+										<a  class="Login-gmail" href="">Login With Gmail
+										</a>
+									</div>
+								</div>
+								<div class="col-ms-12">
+									<div class="text-center margin-top">
+										<a  class="Login-fackbook" href="">Login With Fackbook
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<div class="text-center margin-top">
+										គ្មានគណនីមែនទេ ?
+										<a href="">ចុះឈ្នោះទីនេះ !</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+{% endblock %}

@@ -1,0 +1,150 @@
+<div class="delivery">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="col-md-3 padding-0">
+                                    <div class="confi">
+                                        <div class="deliver-free"></div>
+                                        <h5>ដឹកជូន FREE</h5>
+                                        <p>សម្រាប់ការកម្មង់លើសពី 30$</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 padding-0">
+                                    <div class="confi">
+                                        <div class="easy-return"></div>
+                                        <h5>ការធានា</h5>
+                                        <p>ធានាដូរវិញក្នុងរយៈពេល3ថ្ងៃ</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 padding-0">
+                                    <div class="confi">
+                                        <div class="price-lowest"></div>
+                                        <h5>តម្លៃ</h5>
+                                        <p>ផ្ដល់ជូននូវតម្លៃដ៏សមរម្យ</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 padding-0">
+                                    <div class="confi">
+                                        <div class="satisfaction"></div>
+                                        <h5>ការពេញចិត្ត</h5>
+                                        <p>ធានាថាពេញចិត្ត១០០%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="background-footer"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-3">
+                                <div class="logo"></div>
+                                <div class="desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="useful-link">
+                                    <h4>Contact Us</h4>
+                                    <ul>
+                                        <li class="email">
+                                            <a href="mailto:bunchenda961@gmail.com">chenda@gmail.com</a>
+                                        </li>
+                                        <li class="phone">
+                                            <a href="tel:+85569999681">(+855) 69 999 681 </a>
+                                        </li>
+                                        <li class="address">
+                                            <a href="">No 14A,St 10B,Tropeang chhuk,Teok Thla,Sen Sok,Phnom Penh</a>
+                                        </li>
+                                        <li class="send"><a href="https://t.me/Bunchenda">@Bunchenda </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="link">
+                                    <h4>Quick Link</h4>
+                                    <ul>
+                                        <li class="home"><a href="{% url 'home-page' %}">Home</a></li>
+                                        <li class="service"><a href="#">Our Services</a></li>
+                                        <li class="portfolios"><a href="#">Portfolios</a></li>
+                                        <li class="contact-us"><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-12 col-xs-12">
+                                <div class="download">
+                                    <h4>Download</h4>
+                                    <a href="#"> <div class="google-play"></div></a>
+                                    <a href="#"> <div class="app-store"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 col-sm-12">
+                    <p>© 2020 IT Create Project ,. Ltd ..All Rights Reservd.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="application/javascript">
+            $(window).bind("scroll", function () {
+                if ($(window).scrollTop() > 80) {
+                    $(".header").addClass("fixed");
+                } else {
+                    $(".header").removeClass("fixed");
+                }
+            });
+            var slideIN = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("binner");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIN++;
+                if (slideIN > slides.length) {
+                    slideIN = 1;
+                }
+                slides[slideIN - 1].style.display = "block";
+                setTimeout(showSlides, 3000);
+            }
+        </script>
+        <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>

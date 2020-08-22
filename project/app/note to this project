@@ -1,0 +1,12 @@
+note to this project
+#error when makemigrations and migrate
+
+-first, delete the field that cause error and recreate and migrate again
+-second, go to migration directory and delete those history incase some error happen and can't be undone by normally delete the model.
+
+#error when display data from database
+- get all the object and store in a variable
+- store that variable in a dictionary as a value and given the key to it.
+-when use in html file, use the key of dictionary we give in the view to display our dynamic site.
+- when loop, make sure to use the variable loops(ex.i). not what it is in.(ex. for i in sad) use i.
+

@@ -1,0 +1,46 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+<style>
+    #header{
+        background:#F0E1DE;
+    }
+    #user-tools{
+        color:#BC0D68;
+    }
+    strong{
+        color:#BC0D68;
+    }
+
+    #user-tools a[href]{
+        color:#BC0D68;
+    }
+
+    .module caption, .inline-group h2 {
+        color:#BC0D68;
+    }
+    a.section:link, a.section:visited {
+        color:#BC0D68;
+    }
+
+    .module h2, .module caption, .inline-group h2 {
+        background:#F0E1DE;
+    }
+
+    div.breadcrumbs{
+        background: #BC0D68;
+    }
+
+    a:link, a:visited {
+        color:#BC0D68;
+    }
+
+    .button, input[type=submit], input[type=button], .submit-row input, a.button {
+        background:#BC0D68;
+    }
+
+</style>
+<img src="{% static 'images/logo.jpg' %}" style="width:150px;height:100px;">
+<h1 style="float:right;font-size:50px;padding-left:30px;padding-top:15px;color: #BC0D68;">Admin Area</h1>
+{% endblock %}

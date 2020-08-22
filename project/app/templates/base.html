@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+{% load static %}
+<!--# to load our static file from our machine,whenever we are dealing with static file from our machine.Load this tag-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>True_brand</title>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" >
+</head>
+<body>
+<!--to include the header to our layout without the demand to extends( include directly)-->
+{% include 'html/partial/header.html' %}
+
+<!--this block content is where we want our site to be editable and changeable by other site extending this layout and illustrate what they want.-->
+{% block content %}
+
+{% endblock %}
+<!-- to include the footer to our layout without the demand to extends( include directly)-->
+
+{% include 'html/partial/footer.html' %}
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+        <title>onlinestor</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    </head>
+<div class="wrapper-from">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="form-register">
+                            <div class="col-sm-12">
+                                <div class="form-group col-sm-12 col-xs-12">
+                                    <h3>សូមបង្កើតគណនីជមុនសិនមុនធ្វើរការទិញទំនិញ !</h3>
+                                </div>
+                            </div>
+                            <form  accept-charset="UTF-8">
+                                <input name="_token" type="hidden" value="qjf87FIuxIBXA2zuPCXKptek5Rct4iB8zkKcPdUJ" />
+                                <div class="col-sm-12">
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">Country:​​ <sup>ទាមទារ</sup></label>
+                                        <select class="form-input select2" required="" name="country">
+                                            <option value="" selected="selected">សូមជ្រើសរើស</option>
+                                            <option value="Cambodia">Cambodia</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">Trade role:​​ <sup>ទាមទារ</sup></label>
+                                        <select class="form-input select2" required="" name="is_role">
+                                            <option value="" selected="selected">សូមជ្រើសរើស</option>
+                                            <option value="Buyer">Buyer</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">ឈ្មោះ:​​ <sup>ទាមទារ</sup></label>
+                                        <input placeholder="ឈ្មោះ" class="form-input" required="" name="fullname" type="text" autocomplete="off" />
+                                    </div>
+
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">លេខទូរសព្ទ:​​ <sup>ទាមទារ</sup></label>
+                                        <input placeholder="លេខទូរសព្ទ" class="form-input" required="" id="default_value" name="phone_number" type="text" value="(+855) " autocomplete="off" />
+                                    </div>
+
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">ពាក្យសម្ងាត់​: <sup>ទាមទារ</sup></label>
+                                        <input placeholder="ពាក្យសម្ងាត់​" class="form-input" required="" name="password" type="password" value="" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">បញ្ជាក់ពាក្យសម្ងាត់: <sup>ទាមទារ</sup></label>
+                                        <input placeholder="បញ្ជាក់ពាក្យសម្ងាត់" class="form-input" required="" name="password_confirmation" type="password" value="" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                        <label for="name">អាសយដ្ឋាន:​​ <sup>ទាមទារ</sup></label>
+                                        <textarea placeholder="អាសយដ្ឋាន" class="form-input" required="" rows="2" name="address" cols="50"></textarea>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <div class="pull-right">
+                                            <button type="submit" class="button">បង្កើតគណនី</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3">
+                                        <a href="http://seonlinestore.com/auth/google" class="google"> Login With Google </a>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <br />
+                                        <p class="text-center">មានគណនីរួចហើយ ? <a href="http://seonlinestore.com/login">ចូល !</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

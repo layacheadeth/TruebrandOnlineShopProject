@@ -1,0 +1,60 @@
+{% load static %}
+
+<div class="header">
+            <div class="frontend-menu firs-header">
+                <div class="container">
+                    <div class="firs-menu">
+                        <ul class="pull-right top-menu">
+                            <li><a href="{% url 'home-page' %}">Home</a></li>
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                            <li><a href="{% url 'register' %}">Register</a></li>
+                            <li><a href="{% url 'about_us' %}">About us</a></li>
+                            <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                        <button onclick="topFunction()" id="myBtn" title="Go to top"></p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <div class="logo">
+                                    <img src="{% static 'images/logo.jpg' %}" >
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="col-md-12 float-left">
+                                    <div class="row space-1">
+                                            <form class="all-from" method="GET" action="{% url 'search' %}" accept-charset="utf-8">
+                                                <div class="col-md-6">
+                                                <input class="form-control" type="text" name="keywords" placeholder="ស្វែងរក......" />
+                                                    </div>
+                                                <div class="col-md-3">
+                                            <select class="form-select input-lg" name="category_id">
+                                                <option value="">ប្រភេទ</option>
+                                                {% for key,value in type_demand.items %}
+                                                    <option value="{{ key }}">{{ value }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <input type="submit" value="ស្វែងរក" class="fine"  />
+                                        </div>
+                                            </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="chat">
+                                    <h5>LOGO CHENDA</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>

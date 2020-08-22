@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+        <meta charset="utf-8" />
+        <title>onlinestore</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    </head>
+<div class="wrapper">
+            <div class="show-model">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="col-md-5">
+                                <div class="item">
+                                    <img src="{{products.Image.url}}" />
+                                </div>
+                            </div>
+                            <div class="des">
+                                <div class="col-md-7">
+                                   <div class="padding">
+                                        <h4>ប្រភេទ : {{products.size}}</h4>
+                                    <h4>ឈ្មោះផលិតផល : {{products.name}}</h4>
+
+                                    <h4>លេខកូដ : 0036</h4>
+                                       <h4>arrive_date: {{products.arrive_date}}</h4>
+                                       <h4>price: {{products.price}}</h4>
+                                       <h4>description: {{products.description}}</h4>
+
+
+                                    <table id="customers">
+                                        <tr class="background">
+                                            <th>ពណ៏</th>
+                                            <th>ទំហំ</th>
+                                            <th>តម្លៃ</th>
+                                            <th>ការទិញ</th>
+                                        </tr>
+                                        <tr class="background-2">
+                                            <td class="classbg" style="background:#ff0000;">
+                                                <p>Red</p>
+                                            </td>
+                                            <td>S</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-1">
+                                            <td class="classbg" style="background:#80ff00;">
+                                                <p>Green</p>
+                                            </td>
+                                            <td>XS</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-2">
+                                            <td class="classbg" style="background:#8000ff;">
+                                                <p>blue</p>
+                                            </td>
+                                            <td>M</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-1">
+                                            <td class="classbg" style="background:#ffff00;">
+                                                <p>Yello</p>
+                                            </td>
+                                            <td>L</td>
+                                            <td><sup>$</sup> 2.00</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-2">
+                                           <td class="classbg" style="background:#ff8000;">
+                                                <p>Orange</p>
+                                            </td>
+                                            <td>XL</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-1">
+                                           <td class="classbg" style="background:#800080;">
+                                                <p>Purple</p>
+                                            </td>
+                                            <td>XL</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td>
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="background-2">
+                                           <td class="classbg" style="background:#000000;">
+                                                <p>Black</p>
+                                            </td>
+                                            <td>XL</td>
+                                            <td><sup>$</sup> 20.0</td>
+                                            <td class="buy">
+                                                <a class="buy" href="#"> ទិញឥឡូវនេះ</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+{% endblock %}
